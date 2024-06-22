@@ -66,6 +66,10 @@ body {
   padding-top: 6 !important;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
 
 @media (max-width: 993px) {
   #sidebar {
