@@ -13,6 +13,7 @@ export class CountryPageComponent implements OnInit{
   public country?: Country;
   public lenguaje : string ='';
   public currencie :any
+  public customDate: Date = new Date();
   private key : any;
   constructor(
     private _route: ActivatedRoute,
@@ -37,13 +38,12 @@ export class CountryPageComponent implements OnInit{
       ),
 
     )
+
     .subscribe(country =>{
       if(!country) return this._router.navigateByUrl('');
       return this.country = country;
     })
   }
 }
-function tab(): import("rxjs").OperatorFunction<Country | null, unknown> {
-  throw new Error('Function not implemented.');
-}
+
 

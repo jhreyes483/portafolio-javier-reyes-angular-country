@@ -9,7 +9,7 @@ import { CountryPageComponent } from './page/country-page/country-page.component
 
 import { SharedModule } from '../shared/shared.module';
 import { CountryTableComponent } from './components/country-table/country-table.component';
-
+import { NowTimeZonePipe } from './pipes/now-time-zone.pipe';
 
 
 @NgModule({
@@ -19,6 +19,9 @@ import { CountryTableComponent } from './components/country-table/country-table.
     ByRegionPageComponent,
     CountryPageComponent,
     CountryTableComponent,
+    /** Pipes */
+    NowTimeZonePipe
+
   ],
   imports: [
     CommonModule,
