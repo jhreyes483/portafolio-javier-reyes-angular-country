@@ -9,8 +9,8 @@ import { CountryService } from '../../services/countries.services';
 })
 export class ByCountryPageComponent {
   public countries: Country[] = [];
-  public title : string ='Por country';
-  public placeholder: string = 'busqueda por country';
+  public title : string ='Por país';
+  public placeholder: string = 'busqueda por país';
   public inputSearcInitialValue : string = '';
 
   constructor(

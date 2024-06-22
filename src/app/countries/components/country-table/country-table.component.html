@@ -3,7 +3,7 @@
 
 
 <div  class="row">
-  <div *ngIf="countries.length === 0; else table" class="alert alert-warning tex-ceter">
+  <div *ngIf="countries.length === 0; else table" class="alert alert-warning tex-ceter mx-auto">
     No hay países
   </div>
 
@@ -33,7 +33,9 @@
             <td>{{ country.capital }}</td>
             <td>{{ country.population | number}}</td>
             <td>
-              <a [routerLink]="['/countries/by', country.cca3]"  href="">Info</a>
+              <a [routerLink]="['/countries/by', country.cca3]" class="btn btn-sm btn-info btn-circle" href="">
+                <i class="fas fa-search"></i>
+              </a>
             </td>
           </tr>
         </tbody>
