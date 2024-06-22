@@ -23,12 +23,40 @@
         <li class="list-group-item item-list">
           <strong>Código:</strong> {{ country.cca3 }}
         </li>
+        <li class="list-group-item item-list">
+          <strong>Región:</strong> {{ country.region }}
+        </li>
+        <li class="list-group-item item-list">
+          <strong>Lenguaje:</strong>  {{lenguaje}}
+        </li>
+        <li class="list-group-item item-list">
+          <strong>Moneda:</strong>  {{ currencie.name}}
+        </li>
+        <li class="list-group-item item-list">
+          <strong>Simbolo:</strong>  {{ currencie.symbol}}
+        </li>
+        <li  class="list-group-item item-list">
+          <strong>timezones</strong> {{ country.timezones }}
+        </li>
+        <li  class="list-group-item item-list">
+          <strong>area</strong> {{ country.area | number }}
+        </li>
+        <li class="list-group-item item-list">
+          <strong>Capital:</strong>  {{ country.capital }} <b> lat </b>{{ country.capitalInfo.latlng  | json}}
+        </li>
+        <li  class="list-group-item item-list">
+          <strong>Lat</strong> {{ country.latlng |json }}
+        </li>
       </ul>
     </div>
     <div class="col-md-12">
-      <div class="row mt-2">
+      <br>
+      <div class="text-center mt-4">
+        <b>Traducciones</b>
+      </div>
+      <div class="row mt-2 ">
         <div class="col">
-          <div class="d-flex flex-wrap">
+          <div class="d-flex flex-wrap ">
             <span class="badge bg-primary m-1">{{ country.translations['ara'].common ?
               country.translations['ara'].common : '' }}</span>
             <span class="badge bg-primary m-1">{{ country.translations['bre'].common ?

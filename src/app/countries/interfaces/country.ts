@@ -36,6 +36,11 @@ export interface Country {
   postalCode?:  PostalCode;
 }
 
+export interface  Currencie {
+  name:string;
+  symbol: string;
+}
+
 export interface CapitalInfo {
   latlng: number[];
 }
@@ -51,12 +56,7 @@ export interface CoatOfArms {
 }
 
 export interface Currencies {
-  YER?: Clp;
-  CRC?: Clp;
-  USD?: Clp;
-  DOP?: Clp;
-  EUR?: Clp;
-  CLP?: Clp;
+  [key: string]: Clp | undefined;
 }
 
 export interface Clp {
