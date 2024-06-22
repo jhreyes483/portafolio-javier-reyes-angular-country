@@ -36,20 +36,20 @@
           <strong>Simbolo:</strong>  {{ currencie.symbol}}
         </li>
         <li  class="list-group-item item-list">
-          <strong>Timezones</strong> {{ country.timezones[0] }}
+          <strong>Timezones:</strong> {{ country.timezones[0] }}
         </li>
         <li  class="list-group-item item-list">
-          <strong>Fecha y hora</strong>  {{ customDate | nowTimeZone : country.timezones[0] }}
+          <strong>Fecha y hora:</strong>  {{ customDate | nowTimeZone : country.timezones[0] }}
 
         </li>
         <li  class="list-group-item item-list">
-          <strong>Area</strong> {{ country.area | number }}
+          <strong>Area:</strong> {{ country.area | number }}
         </li>
         <li class="list-group-item item-list">
           <strong>Capital:</strong>  {{ country.capital }} <b> lat </b>{{ country.capitalInfo.latlng  | json}}
         </li>
         <li  class="list-group-item item-list">
-          <strong>Lat</strong> {{ country.latlng |json }}
+          <strong>Lat:</strong> {{ country.latlng |json }}
         </li>
       </ul>
     </div>
